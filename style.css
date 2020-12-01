@@ -1,0 +1,139 @@
+html {
+    background-color: red;
+}
+#canvas {
+    background-color: #f7f6f4;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    border: 5px solid crimson;
+    display: flex;
+}
+
+#selected {
+    background-color: #00000085;
+}
+
+.sliderBox {
+    margin-top: 7%;
+}
+.displayValue {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#knobs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#selections {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% 0 10%;
+
+}
+
+#input-color {
+    margin-left: 10px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    background-color: red;
+    border: 0px solid black;
+
+}
+
+#slider {
+    background-color: black;
+    outline: none;
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+#left {
+    height: 100px;
+    width: 100px;
+    background-color: #f7f6f4;
+    border: 5px solid crimson;
+
+    border-radius: 100px;
+    margin: 2% 2% 2% 2%;
+}
+#right {
+    height: 100px;
+    width: 100px;
+    background-color: #f7f6f4;
+    border: 5px solid crimson;
+
+    border-radius: 100px;
+    margin: 2% 2% 0% 2%;
+}
+
+#directions {
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 0 0% 0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2em;
+    padding-bottom: 0;
+}
+
+.subtitle {
+    padding-bottom: 0;
+    margin-top: 5%;
+}
+
+.title {
+    padding-bottom: 0;
+}
+/* 
+div.blank {
+    background-color: #f7f6f4;
+}
+div.colored {
+    background-color: black;
+} */
+
+
+.blankPixel {
+    background-color: #f7f6f4;
+    border: 1px solid black;
+}

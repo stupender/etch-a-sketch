@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Etch-A-Sketch</title>
+    <script src="script.js" async></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+        <div class="subtitle"><h2>MAGIC</h2></div>
+        <div class="title"><h1>Etch-A-Sketch</h1></div>
+        <div class="subtitle"><h2>SCREEN</h2></div>
+    </header>
+    <div id="canvas"></div>
+
+
+    <!-- <div id="knobs">
+      <div id="left"></div>
+
+      <div id="right"></div>
+    </div> -->
+
+
+    <div id="selections">
+      <button class="selection" id="blackbutton" data-color="black">BLACK</button>
+      <!-- <button class="selection" id="Shadebutton" data-color="opaque">SHADE</button> -->
+      <button class="selection" id="rainbowbutton" data-color="rainbow">RAINBOW</button>
+      <button class="selection" id="custombutton">CUSTOM <input type="color" value="#000000" id="input-color"></button>
+      <button class="selection" id="eraserbutton" data-color="eraser">ERASER</button>
+      <button class="selection" id="resetbutton" onclick="resetGrid()">RESET</button>
+    </div>
+
+    <div class="sliderBox">
+      <input type="range" min="2" max="100" value="20" id="slider">
+      <p class="displayValue">20</p>
+    </div>        
+
+  </body>
+
+</html>
