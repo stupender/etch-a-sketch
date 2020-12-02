@@ -17,29 +17,28 @@
         <div class="title"><h1>Etch-A-Sketch</h1></div>
         <div class="subtitle"><h2>SCREEN</h2></div>
     </header>
-    <div id="canvas"></div>
 
 
-    <!-- <div id="knobs">
-      <div id="left"></div>
+    <div id="center">
 
-      <div id="right"></div>
-    </div> -->
+      <div id="selections">
+        <!-- <button class="selection" id="blackbutton" data-color="black">BLACK</button> -->
+        <!-- <button class="selection" id="Shadebutton" data-color="opaque">SHADE</button> -->
+        <!-- <button class="option" id="rainbowbutton" data-color="rainbow">RAINBOW</button> -->
+        <!-- <button class="option" id="custombutton">CUSTOM <input type="color" value="#000000" id="input-color"></button> -->
+        <!-- <button class="option" id="eraserbutton" data-color="eraser">ERASER</button> -->
+        <button class="option knob" id="resetbutton">Shake it!</button>
+        <div class="sliderBox">
+          <input type="range" min="2" max="100" value="16" class="option" id="slider">
+          <p id="displayValue">16</p>
+        </div>   
+      </div>
 
+      <div id="canvas"></div>
 
-    <div id="selections">
-      <button class="selection" id="blackbutton" data-color="black">BLACK</button>
-      <!-- <button class="selection" id="Shadebutton" data-color="opaque">SHADE</button> -->
-      <button class="selection" id="rainbowbutton" data-color="rainbow">RAINBOW</button>
-      <button class="selection" id="custombutton">CUSTOM <input type="color" value="#000000" id="input-color"></button>
-      <button class="selection" id="eraserbutton" data-color="eraser">ERASER</button>
-      <button class="selection" id="resetbutton" onclick="resetGrid()">RESET</button>
     </div>
 
-    <div class="sliderBox">
-      <input type="range" min="2" max="100" value="20" id="slider">
-      <p class="displayValue">20</p>
-    </div>        
+     
 
   </body>
 

@@ -1,44 +1,56 @@
-      // Create a variable to hold the grid value. 
-      let slider = document.querySelector('#slider');
-      let displayValue = document.querySelector('.displayValue');
-      let sliderValue = document.getElementById('slider');
+// VARIABLES TO HOLD CANVAS, SLIDER
+let canvas = document.querySelector('#canvas');
+let input = document.querySelector('#slider');
+let reset = document.querySelector("#resetbutton");
 
-      // Generate the default grid of divs.
-      let canvas = document.querySelector('.canvas');
-
-      fuction createGrid() {
-        for (let i = 0; i < 400; i++) {
-          div.classList.add('blankPixel');
-          div.addEventListener('mouseover', function(event) {
-          event.target.style.backgroundColor = 'black';
-          canvas.appendChild(div);
-          })
-        }
-      }
-
-      // Create variables to hold slider number, and update the grid!
-      
-      function changeSize() {
-        // let displayValue = document.querySelector('.displayValue')
-        displayValue.textContent = sliderValue;
-          for (let i = 0; i < value * value; i++) {
-            div.classList.add('blankPixel');
-            div.addEventListener('mouseover', function(event) {
-              event.target.style.backgroundColor = 'black';
+// FUNCTION TO GENERATE DEFAULT GRID
+function createDefaultGrid() {
+    // LOOP FOR 16 x 16 PIXEL GRID
+    for (let i = 0; i < 16 * 16; i++) {
+        let div = document.createElement('div');
+        div.classList.add('blank');
+        canvas.appendChild(div);
+        // EVENT LISTENER TO TURN MOUSEOVER BOXES BLACK
+        div.addEventListener('mouseover', function(event) {
+            event.target.classList.add('black');
+            // EVENT LISTENER RESET ALL BLACK PIXELS
+            reset.addEventListener("click", function() {
+                event.target.classList.remove('black');
             })
-            canvas.appendChild(div);
-          }
-        };
-      
-      slider.addEventListener('input', changeSize);
+        })
+    }
+}
 
-      // Add an event listener to these divs so that when they are selected, they will change to a class or id with a different color.
-      // Ideally, this will use the arrow keys on the keyboard to move up and down through the divs --- .focus()
+createDefaultGrid();
 
-      function colorGrid {
-        this.style.backgroundColor = '#000000';
-        this.classList.remove('');
-      }
 
-      // Add a button with an event listener that will clear all classes from these divs
+// UPDATE DISPLAY TEXT TO MATCH SLIDER VALUE
+let slider = document.getElementById("slider");
+let sliderValue = slider.value;
 
+slider.addEventListener("mousemove", function () { 
+    sliderValue = slider.value;
+    document.getElementById('displayValue').textContent = slider.value;
+}); 
+
+
+// slider.addEventListener("mousemove", createSliderGrid);
+
+
+// FUNCTION TO GENERATE NEW GRID BASED ON SLIDER VALUE
+sliderValue.onchange = function() {
+    // LOOP FOR 16 x 16 PIXEL GRID
+    for (let i = 0; i < sliderValue * sliderValue; i++) {
+        let div = document.createElement('div');
+        div.classList.add('blank');
+        canvas.appendChild(div);
+        // EVENT LISTENER TO TURN MOUSEOVER BOXES BLACK
+        div.addEventListener('mouseover', function(event) {
+            event.target.classList.add('black');
+            // EVENT LISTENER RESET ALL BLACK PIXELS
+            reset.addEventListener("click", function() {
+                event.target.classList.remove('black');
+            })
+        })
+    }
+};
