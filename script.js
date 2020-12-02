@@ -23,19 +23,16 @@ function createDefaultGrid() {
 
 createDefaultGrid();
 
-
 // UPDATE DISPLAY TEXT TO MATCH SLIDER VALUE
 let slider = document.getElementById("slider");
 let sliderValue = slider.value;
 
 slider.addEventListener("mousemove", function () { 
     sliderValue = slider.value;
-    document.getElementById('displayValue').textContent = slider.value;
+    document.getElementById('displayValue').textContent = "Size: " + slider.value;
 }); 
 
-
 // slider.addEventListener("mousemove", createSliderGrid);
-
 
 // FUNCTION TO GENERATE NEW GRID BASED ON SLIDER VALUE
 sliderValue.onchange = function() {

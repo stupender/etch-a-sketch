@@ -14,7 +14,7 @@ html {
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
-    border: 7px inset #e80000;
+    border: 10px inset #e80000;
     border-radius: 0px;
     height: 500px;
     width: 500px;
@@ -37,8 +37,8 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 0% 0 0% 0;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 20%, #D1B464 60%, #5d4a1f 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 40%, #D1B464 100%);    -webkit-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
 }
@@ -52,8 +52,8 @@ header {
     font-weight: 300;
     font-style: italic;
     font-size: 1em;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 20%, #D1B464 60%, #5d4a1f 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 40%, #D1B464 100%);    -webkit-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
 
@@ -66,10 +66,8 @@ button {
     font-weight: 600;
     font-size: 1.5em;
     font-style: italic;
-            
     background-color: #f7f6f4;
-    
-    border: 5px outset white;
+    border: 10px outset #ffffff1f;
     margin-bottom: 30px;
     /* width: 100% */
 }
@@ -92,11 +90,11 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     /* color: #f7f6f4; */
-    font-size: 2em;
+    font-size: 1.5em;
     font-style: italic;
     margin: 0 0;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 20%, #D1B464 40%, #5d4a1f 80%, #5d4a1f 100%);    -webkit-background-clip: text;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 40%, #D1B464 100%);    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
 }
 #selections {
