@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -8,38 +7,31 @@
     <script src="script.js" async></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-
   </head>
-
   <body>
     <header>
         <div class="subtitle"><h2>MAGIC</h2></div>
         <div class="title"><h1>Etch-A-Sketch</h1></div>
         <div class="subtitle"><h2>SCREEN</h2></div>
     </header>
-
-
     <div id="center">
-
       <div id="selections">
-        <!-- <button class="selection" id="blackbutton" data-color="black">BLACK</button> -->
-        <!-- <button class="selection" id="Shadebutton" data-color="opaque">SHADE</button> -->
-        <!-- <button class="option" id="rainbowbutton" data-color="rainbow">RAINBOW</button> -->
-        <!-- <button class="option" id="custombutton">CUSTOM <input type="color" value="#000000" id="input-color"></button> -->
-        <!-- <button class="option" id="eraserbutton" data-color="eraser">ERASER</button> -->
-        <button class="option knob" id="resetbutton">Shake it!</button>
+        <button class="option knob" id="clear">
+          <div id="goldtext">Shake it!</div>
+        </button>
         <div class="sliderBox">
           <input type="range" min="2" max="100" value="16" class="option" id="slider">
           <p id="displayValue">Size: 16</p>
         </div>   
       </div>
-
       <div id="canvas"></div>
-
+      <!-- <div id="selections">
+        <button class="selection" id="blackbutton" data-color="black">BLACK</button>
+        <button class="selection" id="shadebutton" data-color="opaque">SHADE</button>
+        <button class="option" id="rainbowbutton" data-color="rainbow">RAINBOW</button>
+        <button class="option" id="custombutton">CUSTOM <input type="color" value="#000000" id="input-color"></button>
+        <button class="option" id="eraserbutton" data-color="eraser">ERASER</button>
+      </div> -->
     </div>
-
-     
-
   </body>
-
 </html>

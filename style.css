@@ -67,9 +67,17 @@ button {
     font-size: 1.5em;
     font-style: italic;
     background-color: #f7f6f4;
-    border: 10px outset #ffffff1f;
+    border: 10px outset #ffffff2e;
     margin-bottom: 30px;
     /* width: 100% */
+}
+#goldtext {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 20%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFAC 0%, #D1B464 0%);    
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+
 }
 .knob {
     
@@ -80,11 +88,27 @@ button {
 }
 
 #slider {
-    background-color: black;
+    -webkit-appearance: none;
+    background-color: red;
+    border: 5px inset #e80000;
     outline: none;
     border-radius: 50px;
+    height: 20px;
     width: 100%;
+
 }
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 10px outset #ffffff2e;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    /* box-shadow: 2px 2px 2px #000000, 0px 0px 2px #0d0d0d; */
+  }
+
 #displayValue {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -92,9 +116,10 @@ button {
     /* color: #f7f6f4; */
     font-size: 1.5em;
     font-style: italic;
-    margin: 0 0;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 40%, #D1B464 100%);    -webkit-background-clip: text;
+    margin: 20px 0 0 0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 10%, transparent 40%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #FFFFAC 30%, #D1B464 100%);    
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
 }
 #selections {
