@@ -2,6 +2,7 @@ html {
     background-color: red;
 
 }
+
 #center {
     width: 100%;
     display: flex;
@@ -9,11 +10,14 @@ html {
     align-items: center;
     margin: 0 0 0 0;
 }
+/* div {
+    display: inline-grid;
+} */
 #canvas {
     margin: 0 5% 0 10%;
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    /* grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr); */
     border: 10px inset #e80000;
     border-radius: 0px;
     height: 500px;
