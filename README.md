@@ -1,0 +1,1 @@
+This is an etch-a-sketch app built with HTML, CSS, & Javascript as a project in the Odin Project curriculum.
